@@ -164,8 +164,8 @@ When he login is done on the webpage it sends the data to backend as payload to 
 
 ## Tutorials
 
-###### **Django Tutorial** - [See Tutorial](https://github.com/sawolab/sawo-python-example)
-###### **Flask Tutorial** - [See Tutorial](https://github.com/sawolab/sawo-python-example) 
+###### **Django Tutorial** - [See Tutorial](https://github.com/sawolab/sawo-python-examples)
+###### **Flask Tutorial** - [See Tutorial](https://github.com/sawolab/sawo-python-examples) 
 
 ## Versioning
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). Thank
