@@ -11,8 +11,7 @@ A step by step series of examples that tell you how to get a development env run
 ```
 pip install sawo
 ```
-#### Import from Sawo createTemplate, getContext and verifyToken method from the sawo package
-
+#### From Sawo import createTemplate, getContext and verifyToken methods
 **The getContext method is used to create sawo dict object from data gain from DB in Django**
 ```python
 from sawo import createTemplate,getContext,verifyToken
@@ -49,6 +48,7 @@ This will create a _sawo.html file in the filepath provided.
 
 ##### Using _sawo.html in your html files
 
+
 ###### Django
 
 ```html
@@ -71,7 +71,7 @@ This will create a _sawo.html file in the filepath provided.
 The variable name used in **_sawo.html** template are **sawo.auth_key**, **sawo.identifier** and **sawo.to** so to send that data we create a json.
 
 **Note**
-1. The "to" route should be a post route which can recive posted data
+1. The "to" route should be a post route which can recive posted data.
 2. If you dont know how data is passed to templates in Django or Flask, We will suggest looking into it first. 
 
 ###### Django
@@ -97,7 +97,7 @@ The variable name used in **_sawo.html** template are **sawo.auth_key**, **sawo.
 ```
 
 ##### Method 2. Using admin and database to save config for sawo
-Step 1. Creating fields for sawo api_key and identifier to set it from admin dashboard
+Step 1. Creating fields for sawo api_key and identifier to set it from admin dashboard.
 
 **copy this code in models of your app**
 
@@ -107,7 +107,7 @@ class Config(models.Model):
     identifier = models.CharField(max_length=100, choices=[("email","Email"),("phone_number_sms","Phone")])
 ```
 
-Step 2. Setting up view.py of app
+Step 2. Setting up view.py of app.
 
 **Note: Route should be the reciving end where you can handle post request**
 ```python
@@ -144,7 +144,7 @@ def index(request):
         }
 ```
 #### Verifying Token
-When he login is done on the webpage it sends the data to backend as payload to verify user you can use verifyToken function , it returns a boolen.
+When the login is done on the webpage it sends the data to backend as payload to verify user, you can use verifyToken function, it returns a boolen.
 
 ##### Backend **Code is ame for Django and Flask**
 ```python
@@ -168,7 +168,7 @@ When he login is done on the webpage it sends the data to backend as payload to 
 ###### **Flask Tutorial** - [See Tutorial](https://github.com/sawolab/sawo-python-examples) 
 
 ## Versioning
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). Thank
+We use [SemVer](http://semver.org/) for versioning.
 
 ## Authors
 **SAWO Labs** - [GitHub](https://github.com/sawolab)
