@@ -18,7 +18,7 @@ from sawo import createTemplate,getContext,verifyToken
 ```
 
 #### API Key
-* Login to sawo [dev console.](dev.sawolabs.com)
+* Login to sawo [dev console](https://dev.sawolabs.com)
 * Create a new project
     * Set Project Name
     * Set Project Host
